@@ -1,0 +1,389 @@
+.blueBtn {
+  background: #1761a5;
+  border-radius: 50px;
+  padding: 8px 25px;
+  white-space: nowrap;
+  color: #fff;
+  height: 40px;
+  border: 2px solid #1761a5;
+
+  &:hover {
+    background: #1761a5;
+    color: #fff;
+    border: 2px solid #1761a5;
+  }
+
+  &--border {
+    color: #1761a5;
+    background: #fff;
+
+    &:hover {
+      color: #1761a5;
+      background: #fff;
+    }
+  }
+}
+
+.formGroup {
+  margin-bottom: 18px;
+
+  .customLabel {
+    color: #0d4b85;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0 0 2px;
+    transform: none !important;
+    padding: 0 !important;
+  }
+
+  input,
+  textarea {
+    padding: 10px 15px;
+    border: 1px solid #ccd8e3;
+    border-radius: 15px;
+    width: 100%;
+    color: #333;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0 0 2px;
+    line-height: 20px;
+
+    &:focus,
+    &:focus-within {
+      outline: none;
+      box-shadow: none;
+      border-color: #1761a5;
+    }
+  }
+
+  .MuiFormControl-root {
+    width: 100%;
+  }
+
+  .MuiFormLabel-root {
+    transform: translate(12px, 10px) scale(1);
+    background: #fff;
+    padding: 0 5px;
+    color: #0d4b85;
+    font-size: 14px;
+    font-weight: 400;
+
+    &.MuiFormLabel-filled,
+    &.Mui-focused {
+      transform: translate(12px, -9px) scale(0.85);
+    }
+  }
+
+  fieldset {
+    display: none;
+  }
+}
+
+.tabHeader {
+  padding: 15px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #eeeeee;
+  gap: 10px;
+  box-shadow: 0 2px 7px #dfdfdf;
+  overflow-x: auto;
+
+  &__btn {
+    border-radius: 50px;
+    background: #f5f5f5;
+    box-shadow: none;
+    text-transform: capitalize;
+    color: #1761a5;
+    font-weight: 700;
+    border: 1px solid #e2ebf3;
+    box-shadow: 0 2px 7px #fff;
+    min-width: 140px;
+
+    &:hover {
+      background: #f5f5f5;
+      color: #1761a5;
+      border-color: #1761a5;
+      box-shadow: 0 2px 7px #dfdfdf;
+    }
+
+    &.activeTab {
+      background: #1761a5;
+      color: #fff;
+      border-color: #fff;
+      box-shadow: 0 0px 12px #dfdfdf;
+    }
+  }
+}
+
+
+.pageLayout {
+  padding: 50px 0;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+  }
+
+  &__title {
+    font-size: 30px;
+    color: #0d4b85;
+    font-weight: 600;
+  }
+
+  &__formTitle {
+    font-size: 18px;
+    color: #0d4b85;
+    font-weight: 600;
+  }
+
+  &__form {
+    border: 1px solid #ccd8e3;
+    border-radius: 50px;
+    display: flex;
+    padding: 5px;
+
+    input {
+      padding: 8px 15px;
+    }
+
+    .MuiFormControl-root {
+      width: 100%;
+    }
+
+    .MuiFormLabel-root {
+      transform: translate(20px, 10px) scale(1);
+      background: #edf5fd;
+      padding: 0 5px;
+      color: #0d4b85;
+      font-size: 14px;
+      font-weight: 400;
+
+      &.MuiFormLabel-filled,
+      &.Mui-focused {
+        transform: translate(20px, -15px) scale(0.85);
+      }
+    }
+
+    fieldset {
+      display: none;
+    }
+
+    button {
+      background: #1761a5;
+      border-radius: 50px;
+      padding: 8px 25px;
+      white-space: nowrap;
+    }
+  }
+}
+
+.MuiTableContainer-root {
+  padding: 2px;
+
+  table {
+    border-collapse: separate;
+    border-spacing: 0 12px;
+
+    th,
+    td {
+      border-bottom: none;
+      padding: 8px 15px;
+    }
+
+    thead {
+      th {
+        font-size: 14px;
+        color: #0d4b85;
+        font-weight: 600;
+        padding: 10px 15px;
+      }
+    }
+
+    tbody {
+      tr {
+        background-color: #dcecfb;
+        border-radius: 10px;
+        border: 1px solid #102437;
+        outline: 2px solid transparent;
+        overflow: hidden;
+        box-shadow: 0 2px 7px #dfdfdf;
+
+        &:nth-child(even) {
+          background-color: #fff;
+        }
+
+        td {
+          font-size: 16px;
+          color: #0d4b85;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}
+
+.tableActionBtn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  button {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    border: 1px solid #1761a5;
+    background: #1761a5;
+    color: #FFF;
+
+    svg {
+      height: 20px;
+      width: 20px;
+    }
+
+    &:hover {
+      background: transparent;
+      color: #1761a5;
+    }
+
+    &.deleteBtn {
+      background: #e33700;
+      border-color: #e33700;
+
+      &:hover {
+        background: transparent;
+        color: #e33700;
+      }
+    }
+  }
+}
+
+.formCard {
+  padding: 32px;
+  background: #fff;
+  border: 1px solid #eeeeee;
+  box-shadow: 0 2px 7px #dfdfdf;
+  max-width: 700px;
+  margin: 0 auto;
+  border-radius: 15px;
+
+  &__title {
+    font-size: 22px;
+    color: #0d4b85;
+    font-weight: 600;
+    text-align: center;
+    margin: 0 0 35px;
+  }
+
+  &__btn {
+    display: grid;
+    gap: 25px;
+
+    button {
+      width: 100%;
+    }
+  }
+
+  .pageLayout__form .MuiFormLabel-root {
+    background: #fff;
+  }
+}
+
+.successMsg {
+  padding: 10px 15px;
+  border: 1px solid #14ab14;
+  color: #14ab14;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  margin-top: 25px;
+  text-align: center;
+}
+
+.errorMsg {
+  padding: 10px 15px;
+  border: 1px solid #e33700;
+  color: #e33700;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  margin-top: 25px;
+  text-align: center;
+}
+
+.formModel {
+  &>.MuiBox-root {
+    padding: 32px;
+    background: #fff;
+    border: 1px solid #eeeeee;
+    max-width: 600px;
+    margin: 0 auto;
+    width: calc(100% - 20px);
+    border-radius: 15px;
+  }
+
+  &__head {
+    margin: 0 0 35px;
+
+    button {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
+
+  &__title {
+    font-size: 22px;
+    color: #0d4b85;
+    font-weight: 600;
+    text-align: center;
+
+  }
+
+  .formGroup {
+    margin-bottom: 22px;
+  }
+
+  &__btn {
+    button {
+      width: 100%;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  .tabHeader {
+    justify-content: flex-start;
+
+  }
+
+  .pageLayout__header {
+    justify-content: center;
+  }
+
+  .pageLayout__form {
+    width: 100%;
+  }
+
+  .formCard {
+    .pageLayout__form {
+      border: none;
+      border-radius: 0;
+      display: flex;
+      padding: 0;
+      flex-direction: column;
+      gap: 10px;
+
+      input {
+        border: 1px solid #ccd8e3;
+        border-radius: 50px;
+      }
+    }
+  }
+}

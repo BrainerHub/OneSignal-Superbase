@@ -1,0 +1,83 @@
+{
+  "plugins": [
+    "stylelint-order"
+  ],
+  "rules": {
+    "at-rule-no-unknown": [
+      true,
+      {
+        "ignoreAtRules": [
+          "extends",
+          "ignores"
+        ]
+      }
+    ],
+    "at-rule-no-vendor-prefix": true,
+    "color-hex-case": [
+      "lower",
+      {
+        "message": "Lowercase letters are easier to distinguish from numbers"
+      }
+    ],
+    "color-named": "always-where-possible",
+    "custom-property-no-missing-var-function": null,
+    "declaration-no-important": true,
+    "declaration-property-unit-disallowed-list": {
+      "font-size": [
+        "px"
+      ]
+    },
+    "declaration-block-no-redundant-longhand-properties": [
+      true,
+      {
+        "ignoreShorthands": [
+          "animation",
+          "border-radius",
+          "border-width",
+          "flex",
+          "flex-flow",
+          "margin",
+          "outline",
+          "padding",
+          "transition"
+        ]
+      }
+    ],
+    "font-family-name-quotes": "always-unless-keyword",
+    "font-weight-notation": "named-where-possible",
+    "function-url-quotes": "always",
+    "function-url-scheme-disallowed-list": [
+      "ftp",
+      "/^http/"
+    ],
+    "max-line-length": [
+      100,
+      {
+        "ignore": "comments"
+      }
+    ],
+    "media-feature-name-no-vendor-prefix": true,
+    "number-leading-zero": "always",
+    "order/properties-alphabetical-order": [
+      true
+    ],
+    "property-case": "lower",
+    "property-disallowed-list": [
+      "float"
+    ],
+    "property-no-vendor-prefix": true,
+    "selector-attribute-brackets-space-inside": "never",
+    "selector-attribute-operator-disallowed-list": [
+      "*="
+    ],
+    "selector-attribute-quotes": "always",
+    "selector-max-attribute": 2,
+    "selector-max-compound-selectors": 3,
+    "selector-max-id": 1,
+    "selector-max-specificity": "1,4,0",
+    "selector-no-vendor-prefix": true,
+    "string-quotes": "double",
+    "value-no-vendor-prefix": true,
+    "value-keyword-case": "lower"
+  }
+}
